@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: all 0.5s ease;
+  }
+  h3 {
+    text-align: center;
+    color: #826d92;
+    font-size: 2.3rem;
+  }
+  h4 {
+    color: #a492d3;
+    font-size: 1.5em;
+  }
+  .bullet {
+    margin-top: 5px;
+    margin-left: 0;
+    list-style: none;
+    counter-reset: li;
+    }
+    .bullet li {
+    position: relative;
+    margin-bottom: 1.5em;
+    border: 3px solid #CADFCF;
+    padding: 0.6em;
+    border-radius: 4px;
+    background: #FEFEFE;
+    color: #936672;
+    font-family: "Trebuchet MS", "Lucida Sans";
+    }
+    .bullet li:before 
+    {
+    position: absolute;
+    top: -0.7em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    font-size: 16px;
+    font-weight: bold;
+    color: #DCC24B;
+    background: #FEFEFE;
+    border-radius: 50%;
+    counter-increment: li;
+    content: counter(li);
+    }
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  ul {
+    margin-left: 2rem;
+  }
+
+  a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: rgb(150, 105, 157);
+  }
+  .yep {
+    text-align: center;
+  }
+  
+  .container {
+    background-color: #a28282;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #presentation-area {
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    background-color: #917a93;
+  }
+  
+  /* Styling all three sections */
+  #presentation-area .presentation {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #bcabbd;
+    position: relative;
+  }
+  .slide {
+    background-color: #a28282;
+  }
+  
+  #presentation-area .counter {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    color: #bc9cd6;
+  }
+  
+  #presentation-area .navigation {
+    position: absolute;
+    bottom: -45px;
+    right: 0;
+  }
+  
+  /* On full screen mode */
+  #presentation-area.full-screen {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  #presentation-area.full-screen .counter {
+    bottom: 15px;
+    left: 15px;
+  }
+  
+  #presentation-area.full-screen .navigation {
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  #presentation-area.full-screen .navigation .btn:hover {
+    background: #201e1e;
+    color: #ffffff;
+  }
+  
+  #presentation-area.full-screen .navigation .btn-screen:hover {
+    background: #a1a3d0;
+  }
+  /* End full screen mode */
+  
+  /* Buttons */
+  .navigation button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .navigation .btn {
+    background: #957777;
+    color: #ffffff;
+    border-radius: 0.25rem;
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  .navigation .btn.show {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+  }
+  
+  .navigation .btn-screen {
+    background: transparent;
+    color: #c8b5e3;
+    visibility: hidden;
+  }
+  
+  .btn-screen.show {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+  }
+  
+  .btn-screen.hover {
+    color: #ffffff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  /* End Buttons */
+  
+  /* content */
+  .presentation .content {
+    padding: 2em;
+    width: 100%;
+    height: calc(100% - 100px);
+    z-index: 11;
+  }
+  
+  .presentation .content.grid {
+    display: grid;
+  }
+  
+  .presentation .content.grid.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .content .title {
+    font-size: 2.2em;
+    text-align: center;
+    color: rgb(185, 139, 196);
+  }
+  
+  .content .sub-title {
+    font-size: 2.5em;
+    color: purple;
+  }
+  
+  .content p {
+    font-size: 1.25em;
+    margin-bottom: 1rem;
+    color: rgb(169, 125, 167);
+  }
+  /* End Content Stylesheet */
+  
+  /* Slide */
+  .presentation .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d7cbf0;
+    opacity: 0;
+    transform: scale(0);
+    visibility: none;
+  }
+  
+  .slide.show {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+  }
+  
+  .slide .heading {
+    padding: 2rem;
+    background: rgb(133, 134, 204);
+    font-size: 2em;
+    font-weight: bold;
+    color: #fffefe;
+  }
