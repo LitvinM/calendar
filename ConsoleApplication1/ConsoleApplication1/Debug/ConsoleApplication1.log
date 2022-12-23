@@ -1,0 +1,132 @@
+﻿Сборка начата 16.12.2022 15:52:30.
+Уровень детализации журнала: Normal.     1>Проект "F:\fuckingFuck\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj" в узле 2 (целевые объекты Build).
+     1>InitializeBuildStatus:
+         Создание "Debug\ConsoleA.ec0bbe91.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       VcpkgTripletSelection:
+         Using triplet "x86-windows" from "F:\vcpkg\vcpkg\installed\x86-windows\"
+         Using normalized configuration "Debug"
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX86\x86\CL.exe /c /I"F:\vcpkg\vcpkg\installed\x86-windows\include" /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt ConsoleApplication1.cpp
+         ConsoleApplication1.cpp
+         Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+         - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+         - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+         Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+     1>F:\vcpkg\vcpkg\installed\x86-windows\include\crow\routing.h(1212,1): warning C4267: аргумент: преобразование из "size_t" в "uint16_t"; возможна потеря данных
+     1>F:\vcpkg\vcpkg\installed\x86-windows\include\crow\http_connection.h(384,68): warning C4244: аргумент: преобразование "std::streamsize" в "size_t", возможна потеря данных
+       F:\vcpkg\vcpkg\installed\x86-windows\include\crow\http_connection.h(372): message : во время компиляции функции-члена класс шаблон "void crow::Connection<Adaptor,Handler,crow::CORSHandler>::do_write_static(void)"
+                 with
+                 [
+                     Adaptor=crow::SocketAdaptor,
+                     Handler=crow::Crow<crow::CORSHandler>
+                 ]
+       F:\vcpkg\vcpkg\installed\x86-windows\include\crow\http_connection.h(249): message : выполняется компиляция ссылки на экземпляр шаблон функции "void crow::Connection<Adaptor,Handler,crow::CORSHandler>::do_write_static(void)"
+                 with
+                 [
+                     Adaptor=crow::SocketAdaptor,
+                     Handler=crow::Crow<crow::CORSHandler>
+                 ]
+       F:\vcpkg\vcpkg\installed\x86-windows\include\crow\http_server.h(195): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "crow::Connection<Adaptor,Handler,crow::CORSHandler>"
+                 with
+                 [
+                     Adaptor=crow::SocketAdaptor,
+                     Handler=crow::Crow<crow::CORSHandler>
+                 ]
+       F:\vcpkg\vcpkg\installed\x86-windows\include\crow\http_server.h(195): message : во время компиляции функции-члена класс шаблон "void crow::Server<crow::Crow<crow::CORSHandler>,crow::SocketAdaptor,crow::CORSHandler>::do_accept(void)"
+       F:\vcpkg\vcpkg\installed\x86-windows\include\crow\http_server.h(152): message : выполняется компиляция ссылки на экземпляр шаблон функции "void crow::Server<crow::Crow<crow::CORSHandler>,crow::SocketAdaptor,crow::CORSHandler>::do_accept(void)"
+       F:\vcpkg\vcpkg\installed\x86-windows\include\crow\app.h(301): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "crow::Server<crow::Crow<crow::CORSHandler>,crow::SocketAdaptor,crow::CORSHandler>"
+       F:\vcpkg\vcpkg\installed\x86-windows\include\crow\app.h(280): message : во время компиляции функции-члена класс шаблон "void crow::Crow<crow::CORSHandler>::run(void)"
+       F:\fuckingFuck\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(82): message : выполняется компиляция ссылки на экземпляр шаблон функции "void crow::Crow<crow::CORSHandler>::run(void)"
+       F:\fuckingFuck\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(25): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "crow::Crow<crow::CORSHandler>"
+     1>F:\vcpkg\vcpkg\installed\x86-windows\include\crow\middleware.h(207,76): warning C4244: аргумент: преобразование "_Ty1" в "int", возможна потеря данных
+                 with
+                 [
+                     _Ty1=std::chrono::system_clock::rep
+                 ]
+       F:\vcpkg\vcpkg\installed\x86-windows\include\crow\routing.h(576): message : выполняется компиляция ссылки на экземпляр шаблон функции "void crow::detail::wrapped_handler_call<main::<lambda_2>,_Ty>(crow::request &,crow::response &,const F &,_Ty &&)"
+                 with
+                 [
+                     _Ty=crow::black_magic::single_tag_to_type<1>::type,
+                     F=main::<lambda_2>
+                 ]
+       F:\fuckingFuck\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(58): message : выполняется компиляция ссылки на экземпляр шаблон функции "void crow::TaggedRule<crow::black_magic::single_tag_to_type<1>::type>::operator ()<main::<lambda_2>>(Func &&)"
+                 with
+                 [
+                     Func=main::<lambda_2>
+                 ]
+       F:\fuckingFuck\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(53): message : выполняется компиляция ссылки на экземпляр шаблон функции "void crow::TaggedRule<crow::black_magic::single_tag_to_type<1>::type>::operator ()<main::<lambda_2>>(Func &&)"
+                 with
+                 [
+                     Func=main::<lambda_2>
+                 ]
+     1>F:\vcpkg\vcpkg\installed\x86-windows\include\crow\middleware.h(210,54): warning C4244: аргумент: преобразование "_Ty" в "int", возможна потеря данных
+                 with
+                 [
+                     _Ty=crow::black_magic::single_tag_to_type<1>::type
+                 ]
+     1>F:\vcpkg\vcpkg\installed\x86-windows\include\crow\middleware.h(221,107): warning C4244: аргумент: преобразование "_Ty1" в "int", возможна потеря данных
+                 with
+                 [
+                     _Ty1=std::chrono::system_clock::rep
+                 ]
+       F:\vcpkg\vcpkg\installed\x86-windows\include\crow\routing.h(576): message : выполняется компиляция ссылки на экземпляр шаблон функции "void crow::detail::wrapped_handler_call<main::<lambda_3>,_Ty>(crow::request &,crow::response &,const F &,_Ty &&)"
+                 with
+                 [
+                     _Ty=crow::black_magic::single_tag_to_type<1>::type,
+                     F=main::<lambda_3>
+                 ]
+       F:\fuckingFuck\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(68): message : выполняется компиляция ссылки на экземпляр шаблон функции "void crow::TaggedRule<crow::black_magic::single_tag_to_type<1>::type>::operator ()<main::<lambda_3>>(Func &&)"
+                 with
+                 [
+                     Func=main::<lambda_3>
+                 ]
+       F:\fuckingFuck\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(62): message : выполняется компиляция ссылки на экземпляр шаблон функции "void crow::TaggedRule<crow::black_magic::single_tag_to_type<1>::type>::operator ()<main::<lambda_3>>(Func &&)"
+                 with
+                 [
+                     Func=main::<lambda_3>
+                 ]
+     1>F:\vcpkg\vcpkg\installed\x86-windows\include\crow\middleware.h(224,59): warning C4244: аргумент: преобразование "_Ty" в "int", возможна потеря данных
+                 with
+                 [
+                     _Ty=crow::black_magic::single_tag_to_type<1>::type
+                 ]
+       Link:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"F:\fuckingFuck\ConsoleApplication1\Debug\ConsoleApplication1.exe" /INCREMENTAL /ILK:"Debug\ConsoleApplication1.ilk" /NOLOGO /LIBPATH:"F:\vcpkg\vcpkg\installed\x86-windows\debug\lib" /LIBPATH:"F:\vcpkg\vcpkg\installed\x86-windows\debug\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "F:\vcpkg\vcpkg\installed\x86-windows\debug\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\fuckingFuck\ConsoleApplication1\Debug\ConsoleApplication1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\fuckingFuck\ConsoleApplication1\Debug\ConsoleApplication1.lib" /MACHINE:X86 Debug\ConsoleApplication1.obj
+         Debug\MyRequestHandler.obj
+         Debug\Source.obj
+         Debug\TodoServerApp.obj
+         ConsoleApplication1.vcxproj -> F:\fuckingFuck\ConsoleApplication1\Debug\ConsoleApplication1.exe
+       AppLocalFromInstalled:
+         pwsh.exe -ExecutionPolicy Bypass -noprofile -File "F:\vcpkg\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "F:\fuckingFuck\ConsoleApplication1\Debug\ConsoleApplication1.exe" "F:\vcpkg\vcpkg\installed\x86-windows\debug\bin" "Debug\ConsoleA.ec0bbe91.tlog\ConsoleApplication1.write.1u.tlog" "Debug\vcpkg.applocal.log"
+         "pwsh.exe" не является внутренней или внешней
+         командой, исполняемой программой или пакетным файлом.
+         Выход из команды "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "F:\vcpkg\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "F:\fuckingFuck\ConsoleApplication1\Debug\ConsoleApplication1.exe" "F:\vcpkg\vcpkg\installed\x86-windows\debug\bin" "Debug\ConsoleA.ec0bbe91.tlog\ConsoleApplication1.write.1u.tlog" "Debug\vcpkg.applocal.log"" с кодом 9009.
+         "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "F:\vcpkg\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "F:\fuckingFuck\ConsoleApplication1\Debug\ConsoleApplication1.exe" "F:\vcpkg\vcpkg\installed\x86-windows\debug\bin" "Debug\ConsoleA.ec0bbe91.tlog\ConsoleApplication1.write.1u.tlog" "Debug\vcpkg.applocal.log"
+         F:\fuckingFuck\ConsoleApplication1\Debug\PocoFoundationd.dll
+         F:\fuckingFuck\ConsoleApplication1\Debug\pcre2-8d.dll
+         F:\fuckingFuck\ConsoleApplication1\Debug\zlibd1.dll
+         F:\fuckingFuck\ConsoleApplication1\Debug\PocoNetd.dll
+         F:\fuckingFuck\ConsoleApplication1\Debug\PocoUtild.dll
+         F:\fuckingFuck\ConsoleApplication1\Debug\PocoXMLd.dll
+         F:\fuckingFuck\ConsoleApplication1\Debug\libexpatd.dll
+         F:\fuckingFuck\ConsoleApplication1\Debug\PocoJSONd.dll
+       FinalizeBuildStatus:
+         Файл "Debug\ConsoleA.ec0bbe91.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\ConsoleA.ec0bbe91.tlog\ConsoleApplication1.lastbuildstate".
+     1>Сборка проекта "F:\fuckingFuck\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+       "F:\fuckingFuck\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         F:\vcpkg\vcpkg\installed\x86-windows\include\crow\routing.h(1212,1): warning C4267: аргумент: преобразование из "size_t" в "uint16_t"; возможна потеря данных
+         F:\vcpkg\vcpkg\installed\x86-windows\include\crow\http_connection.h(384,68): warning C4244: аргумент: преобразование "std::streamsize" в "size_t", возможна потеря данных
+         F:\vcpkg\vcpkg\installed\x86-windows\include\crow\middleware.h(207,76): warning C4244: аргумент: преобразование "_Ty1" в "int", возможна потеря данных
+         F:\vcpkg\vcpkg\installed\x86-windows\include\crow\middleware.h(210,54): warning C4244: аргумент: преобразование "_Ty" в "int", возможна потеря данных
+         F:\vcpkg\vcpkg\installed\x86-windows\include\crow\middleware.h(221,107): warning C4244: аргумент: преобразование "_Ty1" в "int", возможна потеря данных
+         F:\vcpkg\vcpkg\installed\x86-windows\include\crow\middleware.h(224,59): warning C4244: аргумент: преобразование "_Ty" в "int", возможна потеря данных
+
+    Предупреждений: 6
+    Ошибок: 0
+
+Прошло времени 00:00:07.64
