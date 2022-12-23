@@ -1,0 +1,48 @@
+.row div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+    height: 70px;
+    width: 70px;
+}
+
+.row div:active {
+    opacity: 50%;
+    
+}
+
+div .dni:active {
+    opacity: 100%;
+}
+
+
+
+.dni {
+    background-color: rgb(255, 0, 0) !important;
+    color: white !important;
+}
+
+
+
+.an {
+    opacity: 50%;
+}
+
+div .fl {
+    display: flex;
+    flex-flow: column;
+    width: 490px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+div .row {
+    display: flex;
+    flex-flow: row;
+}
+
+.row div:nth-child(6),.row div:nth-child(7){
+    color: red;
+}
