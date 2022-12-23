@@ -1,0 +1,102 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: blanchedalmond;
+    margin:0;
+}
+.App header{
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    max-width: 1000px;
+
+}
+.App header h1{
+    margin-bottom:5vh;
+    font-size: 2.5rem;
+    color:black;
+
+}
+
+input, button{
+    appearance: none;
+    border:none;
+    background: none;
+    outline:none;
+    margin: 0.5em;
+}
+
+.newTaskSubmit{
+    font-size: 1rem;
+}
+
+.newTaskSubmit:hover{
+    color: red;
+    opacity: 0.8;
+}
+.newTaskSubmit:active{
+    opacity:0.6;
+}
+input,:nth-child(3){
+    font-size:1em;
+}
+
+.newTaskInput{
+    padding:0.8rem;
+    border-radius:1rem;
+    margin-right:0.5rem;
+    font-size: 1.0em;
+    background-color: rgb(255, 255, 255);
+    width:30vw ;
+}
+main{
+    border:0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.task-list{
+    padding: 1rem;
+}
+.task-list h2{
+    font-size:1.5rem;
+    font-weight: 530;
+    margin-bottom: 1rem;
+}
+.tasks .task{
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 1rem;
+    margin:10px;
+    min-width: 40vw;
+    padding-left: 1rem;
+}
+
+.task .actions button{
+    font-size: 1rem;
+
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+}
+
+.task .actions button:hover{
+    color: red;
+    opacity: 0.8;
+}
+.task .actions button:active{
+    opacity: 0.6;
+}
+
+.noPlans{
+    font-size: 3rem;
+    color: grey;
+}
+
+.hidden{
+    visibility: hidden;
+}
