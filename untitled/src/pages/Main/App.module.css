@@ -1,0 +1,17 @@
+.App{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5vw;
+
+    margin-top: 10vh;
+}
+
+.box{
+    width: 7vw;
+    height: 7vw;
+
+    border: 1px solid black;
+    margin-top: 2vh;
+    margin-right: 2vw;
+    text-align: center;
+}
